@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+{% block title %} Madlib Story Form{% endblock title %}
+{% block content %}
+    <div class="container">
+        <h1>Mad Lib Stories Input Form</h1>
+    </div>
+    <div class="form_cont">
+        <form action="/stories">
+            <p>Place:  <input type="text" placeholder="condo" name="place"></p>
+            <p>Noun:  <input type="text" placeholder="dragon" name="noun"></p>
+            <p>Verb:  <input type="text" placeholder="eat" name="verb"></p>
+            <p>Adjective:  <input type="text" placeholder="frozen" name="adjective"></p>
+            <p>Plural Noun:  <input type="text" placeholder="popsicles" name="plural_noun"></p>
+            <button class="btn">Submit!</button>
+        </form>
+    </div>
+
+{% endblock content %}
