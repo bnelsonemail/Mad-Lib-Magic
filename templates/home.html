@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Homepage{% endblock title %} {% block
 content %}
-<div class="container">
+<div class="heading">
   <h1>Welcome to the Mad Libs Stories Hompage!!</h1>
   <h2>What is Mad Libs?</h2>
   <p>
@@ -13,6 +13,7 @@ content %}
   </p>
   <br />
 </div>
+<div class="img">
     <img 
         src="{{url_for('static', filename='images/MadLibs.jpg')}}" 
         alt="Mad Libs Pic"
@@ -24,6 +25,8 @@ content %}
     The link below will take you to a form page. You will fill out the following
     information:
   </p>
+  </div>
+  <div class="list">
   <ul>
     <li>A Place</li>
     <li>A Noun</li>
@@ -31,6 +34,8 @@ content %}
     <li>An Adjective</li>
     <li>A Plural Noun</li>
   </ul>
+  </div>
+  <div class="container">
   <p>
     After you have chosen your words for the above list, submit the form and
     your Mad Libs story will be generated!! Hope you enjoy!!
