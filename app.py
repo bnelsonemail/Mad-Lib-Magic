@@ -1,17 +1,23 @@
 from flask import Flask, render_template, request
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 from stories import my_stories
+from config import logger, ProductionConfig # or ProductionConfig, TestingConfig
 import random
+from dotenv import load_dotenv, find_dotenv
+
+
+# load environment variables from the .env file
+load_dotenv(find_dotenv())
 
 app = Flask(__name__)
 
-# Set configuration for development
-app.config['SECRET_KEY'] = "your_secret_key"
-app.config['DEBUG'] = True
-app.config['ENV'] = 'development'
+# Call config files
+app.config.from_object(ProductionConfig)
+# app.config['DEBUG'] = 'DEBUG_TB_INTERCEPT_REDIRECTS = True'
+# debug = DebugToolbarExtension(app)
 
 # Initialize the debug toolbar
-debug = DebugToolbarExtension(app)
+# debug = DebugToolbarExtension(app)
 
 @app.route('/')
 def homepage():
