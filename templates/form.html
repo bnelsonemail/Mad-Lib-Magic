@@ -1,22 +1,62 @@
-{% extends "base.html" %} 
-{% block title %} Madlib Story Form{% endblock title %}
-{% block content %}
-    <div class="container">
-        <h1>Mad Lib Stories Input Form</h1>
-    </div>
-    <div class="form_cont">
-        <form action="/stories">
-            <p><label for="place">Place:</label> <input type="text" placeholder="condo" name="place" id="place"></p>
-            <p><label for="noun">Noun:</label> <input type="text" placeholder="dragon" name="noun" id="noun"></p>
-            <p><label for="verb">Verb:</label> <input type="text" placeholder="eat" name="verb" id="verb"></p>
-            <p><label for="adjective">Adjective:</label> <input type="text" placeholder="frozen" name="adjective" id="adjective"></p>
-            <p><label for="plural_noun">Plural Noun:</label> <input type="text" placeholder="popsicles" name="plural_noun" id="plural_noun"></p>
-            <p><label for="animal">Animal:</label> <input type="text" placeholder="dog" name="animal" id="animal"></p>
-            <p><label for="substance">Substance:</label> <input type="text" placeholder="motor oil" name="substance" id="substance"></p>
-            <p><label for="color">Color:</label> <input type="text" placeholder="purple" name="color" id="color"></p>
-            <button class="btn">Submit!</button>
-        </form>
-    </div>
-    
+{% extends "base.html" %} {% block title %} Madlib Story Form{% endblock title
+%} {% block content %}
+<div class="container">
+  <h1>Mad Lib Stories Input Form</h1>
+</div>
+<div class="form_cont">
+  <form action="/stories">
+    <p>
+      <label for="place">Place:</label>
+      <input type="text" placeholder="condo" name="place" id="place" />
+    </p>
+    <p>
+      <label for="noun">Noun:</label>
+      <input type="text" placeholder="dragon" name="noun" id="noun" />
+    </p>
+    <p>
+      <label for="verb">Verb:</label>
+      <input type="text" placeholder="eat" name="verb" id="verb" />
+    </p>
+    <p>
+      <label for="adjective">Adjective:</label>
+      <input type="text" placeholder="frozen" name="adjective" id="adjective" />
+    </p>
+    <p>
+      <label for="plural_noun">Plural Noun:</label>
+      <input
+        type="text"
+        placeholder="popsicles"
+        name="plural_noun"
+        id="plural_noun"
+      />
+    </p>
+    <p>
+      <label for="animal">Animal:</label>
+      <input type="text" placeholder="dog" name="animal" id="animal" />
+    </p>
+    <p>
+      <label for="substance">Substance:</label>
+      <input
+        type="text"
+        placeholder="motor oil"
+        name="substance"
+        id="substance"
+      />
+    </p>
+    <p>
+      <label for="color">Color:</label>
+      <input type="text" placeholder="purple" name="color" id="color" />
+    </p>
+    <p>
+      <label for="food">Food Item:</label>
+      <input type="text" placeholder="pizza" name="food" id="food" />
+    </p>
+    <p>
+      <label for="hero">Superhero Name:</label>
+      <input type="text" placeholder="wolverine" name="superhero" id="superhero" />
+    </p>
+    <button class="btn">Submit!</button>
+  </form>
+</div>
 
 {% endblock content %}

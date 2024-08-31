@@ -37,6 +37,8 @@ def stories():
     animal = request.args['animal']
     substance = request.args['substance']
     color = request.args['color']
+    food = request.args['food']
+    superhero = request.args['superhero']
     prompts = {
         'place': place, 
         'noun': noun, 
@@ -45,7 +47,10 @@ def stories():
         'plural_noun': plural_noun,
         'animal': animal,
         'substance': substance,
-        'color': color}
+        'color': color,
+        'food': food,
+        'superhero': superhero
+        }
     
     random_key = random.choice(list(my_stories.keys()))
     random_value = my_stories[random_key]
