@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Mad Libs Stories{% endblock title %}
 {% block content %}
-<div class="container">
-    <h1>Mad Libs Story Page</h1>
+<div class="container mx-auto mt-8 p-6 bg-gray-100 rounded-lg shadow-lg max-w-2xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-6">Mad Libs Story Page</h1>
 </div>
-<div>
-    <h2>Your Generated Story</h2>
-    <p> {{ text }} </p>
+<div class="mt-6 p-6 bg-white rounded-lg shadow-lg max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Your Generated Story</h2>
+    <p class="text-lg text-gray-700">{{ text }}</p>
 </div>
-
-
 {% endblock content %}

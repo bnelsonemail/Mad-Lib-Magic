@@ -3,21 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!--<link
       rel="stylesheet"
       href="{{url_for('static', filename='css/styles.css') }}"
+    />-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
     />
     <title>{% block title %} {% endblock %}</title>
   </head>
-  <body>
-    <div class="nav_cont">
-        <nav class="navbar">
-            <a href="/">Home</a>
-            <a href="/form">Input Page</a>
-        </nav>
+  <body class="bg-gray-400 min-h-screen flex flex-col">
+    <div class="bg-black p-4">
+      <nav class="flex justify-between items-center">
+        <div class="text-white text-xl font-bold">Mad Lib Magic</div>
+        <div class="flex space-x-4">
+          <a
+            href="/"
+            class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer"
+          >
+            Home
+          </a>
+          <a
+            href="/form"
+            class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer"
+          >
+            Input Page
+          </a>
+        </div>
+      </nav>
     </div>
-    <main id="main">
-        {% block content %} {% endblock %}
-    </main> 
+    <main id="main">{% block content %} {% endblock %}</main>
   </body>
 </html>
