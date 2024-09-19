@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 18 22:20:28 2024
+
+@author: BNELS
+"""
+NEW FEATURES:
+
+STORY THEMES:
+    Adventure
+
+    Fantasy
+
+    Sports
+
+    Teen Drama
+
+    Star Wars
+
+
+Features will be buttons or links under the instructions to take them to the form.
+Revise the instructions to include discussion on the themed ideas.

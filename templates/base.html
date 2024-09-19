@@ -3,36 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link
-      rel="stylesheet"
-      href="{{url_for('static', filename='css/styles.css') }}"
-    />-->
+    <meta name="description" content="{% block meta_description %}A fun Mad Libs game where you can create hilarious stories by filling in the blanks with words of your choice!{% endblock %}" />
+    <meta name="keywords" content="Mad Libs, Fun, Storytelling, Games, Interactive" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}Mad Lib Magic{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}A fun Mad Libs game where you can create hilarious stories by filling in the blanks with words of your choice!{% endblock %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ request.url }}" />
+    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg') }}"/>
+    <meta property="og:image:alt" content="A fun Mad Libs game." />
+    <meta property="og:site_name" content="Mad Lib Magic" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Choc_Lab_Lover" />
+    <meta name="twitter:title" content="{% block twitter_title %}Mad Lib Magic{% endblock %}" />
+    <meta name="twitter:description" content="{% block twitter_description %}A fun Mad Libs game where you can create hilarious stories by filling in the blanks with words of your choice!{% endblock %}" />
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/twitter-image.jpg') }}" />
+    <!-- UPDATE IMAGE IN TWITTER AND META TAGS -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ request.url }}" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon" />
+
+    <!-- Structured Data (Schema.org) Markup Script -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mad Lib Magic",
+      "url": "{{ request.url }}",
+      "description": "A fun Mad Libs game where you can create hilarious stories by filling in the blanks with words of your choice!",
+      "author": {
+        "@type": "Organization",
+        "name": "Mad Lib Magic"
+      }
+    }
+    </script>
+
+    <!-- Tailwind Link -->
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <title>{% block title %} {% endblock %}</title>
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
+    <title>{% block title %}Mad Lib Magic{% endblock %}</title>
   </head>
   <body class="bg-gray-400 min-h-screen flex flex-col">
-    <div class="bg-black p-4">
+    <header class="bg-black p-4">
       <nav class="flex justify-between items-center">
         <div class="text-white text-xl font-bold">Mad Lib Magic</div>
         <div class="flex space-x-4">
-          <a
-            href="/"
-            class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer"
-          >
+          <a href="/" class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer">
             Home
           </a>
-          <a
-            href="/form"
-            class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer"
-          >
+          <a href="/form" class="text-white hover:bg-red-500 py-2 px-4 rounded transition-colors duration-300 ease-in-out cursor-pointer">
             Input Page
           </a>
         </div>
       </nav>
-    </div>
-    <main id="main">{% block content %} {% endblock %}</main>
+    </header>
+    <main id="main" class="flex-grow">
+      {% block content %} {% endblock %}
+    </main>
+    <footer class="bg-black p-4 text-center text-white">
+      &copy; {{ current_year }} Mad Lib Magic. All rights reserved.
+    </footer>
   </body>
 </html>
+
+
