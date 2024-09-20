@@ -6,7 +6,7 @@ fill out a form with various prompts, and view the generated story.
 """
 
 from flask import Flask, render_template, request
-# from flask_debugtoolbar import DebugToolbarExtension
+from flask_debugtoolbar import DebugToolbarExtension
 from stories import STORIES
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
@@ -22,7 +22,7 @@ app = Flask(__name__)
 # Call config files
 app.config.from_object(DevelopmentConfig)
 # app.config['DEBUG'] = 'DEBUG_TB_INTERCEPT_REDIRECTS = True'
-# debug = DebugToolbarExtension(app)
+debug = DebugToolbarExtension(app)
 
 # Initialize the debug toolbar
 # debug = DebugToolbarExtension(app)
@@ -64,7 +64,7 @@ def stories():
         'color': color,
         'food': food,
         'superhero': superhero
-        }
+    }
 
     # Select a random story
     random_key = random.choice(list(STORIES.keys()))

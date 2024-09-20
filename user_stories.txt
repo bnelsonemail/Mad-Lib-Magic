@@ -8,15 +8,245 @@ NEW FEATURES:
 
 STORY THEMES:
     Adventure
+        Character (Person/Creature): Explorer
+        Sidekick: Talking Animal
+        Villain: Treasure Hunter
+        Tool/Weapon: Machete
+        Location: Jungle Temple
+        Map/Clue: Ancient Scroll
+        Obstacle: Raging River
+        Creature Encounter: Giant Snake
+        Action Verb: Climb
+        Adjective: Dangerous
 
-    Fantasy
+    Medieval Fantasy
+        Character (Person/Creature): Knight
+        Companion: Dragon
+        Villain: Evil Sorcerer
+        Weapon: Magic Sword
+        Magical Item: Enchanted Amulet
+        Kingdom Name: Avalon
+        Quest/Mission: Retrieve the Holy Grail
+        Creature: Troll
+        Action Verb: Quest
+        Adjective: Noble
 
-    Sports
+    Superhero
+        Superhero Name: The Thunderbolt
+        Sidekick: Speedster
+        Villain: The Shadow King
+        Superpower: Lightning Manipulation
+        Gadget/Weapon: Energy Gauntlet
+        City/Location: Metropolis
+        Secret Identity: Alex Storm
+        Mission/Quest: Save the City from Destruction
+        Action Verb: Fly
+        Adjective: Invincible
 
     Teen Drama
+        Main Character: High School Student
+        Best Friend: BFF
+        Crush: Secret Crush
+        Popular Villain: School Bully
+        Gossip/Secret: Love Letter
+        Object: Cell Phone
+        Place: School Dance
+        Event: Prom Night
+        Action Verb: Text
+        Adjective: Awkward
 
     Star Wars
+        Character (Person/Creature): Jedi
+        Sidekick: Droid
+        Villain: Sith Lord
+        Weapon: Lightsaber
+        Vehicle: Starship
+        Planet: Tatooine
+        Power/Ability: The Force
+        Alien Species: Wookiee
+        Mission/Quest: Rescue the princess
+        Adjective: Galactic
+
+    Star Trek
+        Starfleet Captain Name: Captain Zorak
+        Alien Species: Vulcan
+        Starship Name: USS Phoenix
+        Technology/Gadget: Tricorder
+        Planet: Kronos
+        Villain: Romulan Commander
+        Mission/Quest: Negotiate Peace Treaty with the Romulans
+        Alien Creature: Gorn
+        Space Phenomenon: Wormhole
+        Adjective: Warp-speed
 
 
-Features will be buttons or links under the instructions to take them to the form.
-Revise the instructions to include discussion on the themed ideas.
+    Pirate Stories
+        Character (Person/Creature): Pirate Captain
+        Sidekick: Parrot
+        Villain: Mutinous Crew
+        Weapon: Cutlass
+        Ship Name: Black Pearl
+        Location: Skull Island
+        Treasure/Prize: Golden Doubloon
+        Sea Creature: Kraken
+        Action Verb: Plunder
+        Adjective: Salty
+
+    Space Adventures
+        Character (Person/Creature): Astronaut
+        Alien Companion: Martian
+        Villain: Space Pirate
+        Spacecraft Name: Starlight Voyager
+        Gadget/Tool: Laser Blaster
+        Planet: Neptune
+        Space Phenomenon: Black Hole
+        Mission/Quest: Explore a new galaxy
+        Action Verb: Orbit
+        Adjective: Cosmic
+
+    Horror
+        Main Character: The Survivor
+        Monster/Villain: Vampire
+        Haunted Object: Cursed Doll
+        Location: Abandoned House
+        Weapon: Silver Dagger
+        Creepy Sound: Footsteps in the dark
+        Evil Creature: Werewolf
+        Action Verb: Scream
+        Scary Event: Ghostly Apparition
+        Adjective: Terrifying
+
+    Fairy Tale
+        Main Character: Princess
+        Sidekick: Fairy Godmother
+        Villain: Evil Witch
+        Magical Item: Glass Slipper
+        Royal Title: King of the Forest
+        Enchanted Place: Magic Castle
+        Quest/Mission: Break the Curse
+        Fantasy Creature: Unicorn
+        Action Verb: Wish
+        Adjective: Magical
+
+    Smurfs
+        Smurfs Theme:
+        Smurf Name: Brainy Smurf
+        Villain: Gargamel
+        Magical Object: Smurfberry
+        Smurf House: Mushroom House
+        Forest/Location: The Enchanted Forest
+        Magical Creature: Azrael the Cat
+        Action Verb: Smurfing (as a verb)
+        Quest/Mission: Rescue a Smurf from Gargamel
+        Event: Smurf Village Celebration
+        Adjective: Smurfy
+
+    Mystery / Detective
+        Detective Name: Detective Holmes
+        Sidekick: Watson-like Assistant
+        Suspect: Mysterious Stranger
+        Clue: Bloody Handprint
+        Weapon: Murder Weapon
+        Location: Crime Scene
+        Alibi: Late-night Train Ride
+        Motive: Jealousy
+        Action Verb: Investigate
+        Adjective: Suspicious
+
+    Shadow Hunter
+        Shadow Hunter Name: The name of the main hero who hunts creatures of the night (e.g., Raven Nightblade).
+        Sidekick/Partner: A loyal companion or partner that helps the Shadow Hunter (e.g., Midnight the Cat).
+        Villain: The main antagonist or evil entity that the Shadow Hunter must face (e.g., The Night Stalker).
+        Weapon: A specialized weapon that the Shadow Hunter uses (e.g., Shadow Dagger).
+        Special Ability: A supernatural or magical power possessed by the Shadow Hunter (e.g., Shadow Manipulation).
+        Hidden Realm/Place: A mysterious or dark place tied to the supernatural (e.g., The Shadow Realm).
+        Mysterious Artifact: A powerful or cursed item central to the plot (e.g., The Obsidian Key).
+        Mission/Quest: The goal or task that drives the story (e.g., Close the Gate to the Shadow World).
+        Creature: A shadowy or supernatural being (e.g., Shadow Wraith).
+        Adjective: Descriptive words that set the mood of the story (e.g., Ethereal, Dark, Foreboding).
+
+    Medical Thriller Theme:
+        Doctor Name: Dr. Evelyn Hartman
+        Patient Name: John Doe
+        Illness/Disease: Mysterious Virus
+        Medical Procedure: Emergency Surgery
+        Hospital Name: Saint Mercy General
+        Villain/Antagonist: Rogue Scientist
+        Medical Equipment: Scalpel
+        Lab Discovery: Experimental Drug Formula
+        Location: Underground Lab
+        Adjective: Life-threatening
+
+*********************************************************************************************
+
+Summary of Categories Across All Themes:
+    Main Character (protagonist of the story)
+    Sidekick/Companion (supporting character)
+    Villain/Antagonist (the bad guy)
+    Object/Weapon (an important item or tool)
+    Place/Location (setting of the story)
+    Special/Unique Item (theme-specific magical or special item)
+    Quest/Mission (goal of the protagonist)
+    Creature (fantastical or dangerous entity)
+    Action Verb (theme-specific action)
+    Adjective (descriptive word to set the mood)
+
+Summary of Shadow Hunter Theme Categories:
+    Shadow Hunter Name: The name of the main hero who hunts creatures of the night (e.g., Raven Nightblade).
+    Sidekick/Partner: A loyal companion or partner that helps the Shadow Hunter (e.g., Midnight the Cat).
+    Villain: The main antagonist or evil entity that the Shadow Hunter must face (e.g., The Night Stalker).
+    Weapon: A specialized weapon that the Shadow Hunter uses (e.g., Shadow Dagger).
+    Special Ability: A supernatural or magical power possessed by the Shadow Hunter (e.g., Shadow Manipulation).
+    Hidden Realm/Place: A mysterious or dark place tied to the supernatural (e.g., The Shadow Realm).
+    Mysterious Artifact: A powerful or cursed item central to the plot (e.g., The Obsidian Key).
+    Mission/Quest: The goal or task that drives the story (e.g., Close the Gate to the Shadow World).
+    Creature: A shadowy or supernatural being (e.g., Shadow Wraith).
+    Adjective: Descriptive words that set the mood of the story (e.g., Ethereal, Dark, Foreboding).
+
+Summary of Star Trek Theme Categories:
+    Starfleet Captain Name: The name of the commanding officer (e.g., Captain Zorak).
+    Alien Species: A known or new alien race (e.g., Vulcan).
+    Starship Name: The name of the ship they command (e.g., USS Phoenix).
+    Technology/Gadget: High-tech tools used for exploration (e.g., Tricorder).
+    Planet: A location for exploration or diplomacy (e.g., Kronos).
+    Villain: The antagonist or alien commander (e.g., Romulan Commander).
+    Mission/Quest: The primary objective (e.g., Negotiate Peace Treaty).
+    Alien Creature: Dangerous or strange alien life forms (e.g., Gorn).
+    Space Phenomenon: A cosmic event or anomaly (e.g., Wormhole).
+    Adjective: Descriptive terms that fit the sci-fi universe (e.g., Warp-speed).
+
+Summary of Superhero Theme Categories:
+    Superhero Name: The main hero of the story with a unique superhero name.
+    Sidekick: A loyal companion or partner to the superhero.
+    Villain: The antagonist or main threat the hero must defeat.
+    Superpower: A special ability that the superhero possesses (e.g., super strength, flight).
+    Gadget/Weapon: A useful tool or weapon the superhero uses in their adventures.
+    City/Location: The city or location where the action takes place (e.g., Gotham, Metropolis).
+    Secret Identity: The superhero's civilian name and identity.
+    Mission/Quest: The objective or challenge that the superhero must accomplish.
+    Action Verb: A key action performed by the superhero (e.g., save, fly, fight).
+    Adjective: Describes the superhero or the situation (e.g., powerful, invincible).
+
+Summary of Smurfs Theme Categories:
+    Smurf Name: The name of a Smurf (e.g., Brainy Smurf).
+    Villain: The main antagonist (e.g., Gargamel).
+    Magical Object: An important object (e.g., Smurfberry).
+    Smurf House: The Smurfs’ homes (e.g., Mushroom House).
+    Forest/Location: The place where adventures take place (e.g., The Enchanted Forest).
+    Magical Creature: Animals or magical beings in the world (e.g., Azrael the Cat).
+    Action Verb: Smurfing is often used as a verb to mean various things (e.g., Smurfing around).
+    Quest/Mission: The adventure the Smurfs go on (e.g., Rescue a Smurf).
+    Event: A special event in the Smurf village (e.g., Smurf Village Celebration).
+    Adjective: A descriptor used in Smurf language (e.g., Smurfy).
+
+Summary of Medical Thriller Theme Categories:
+    Doctor Name: The protagonist, a doctor or surgeon (e.g., Dr. Evelyn Hartman).
+    Patient Name: The name of the patient whose life is at stake (e.g., John Doe).
+    Illness/Disease: The mysterious condition or disease (e.g., Mysterious Virus).
+    Medical Procedure: The high-stakes procedure performed to save lives (e.g., Emergency Surgery).
+    Hospital Name: The name of the medical facility (e.g., Saint Mercy General).
+    Villain/Antagonist: The person or entity behind the crisis (e.g., Rogue Scientist).
+    Medical Equipment: Tools used in surgery or diagnosis (e.g., Scalpel).
+    Lab Discovery: An important scientific discovery or experimental drug (e.g., Experimental Drug Formula).
+    Location: Where a key part of the story takes place (e.g., Underground Lab).
+    Adjective: Descriptive terms that increase the tension (e.g., Life-threatening).
