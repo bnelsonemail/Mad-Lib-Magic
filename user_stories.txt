@@ -61,11 +61,15 @@ STORY THEMES:
         Villain: Sith Lord
         Weapon: Lightsaber
         Vehicle: Starship
+        Animal: Wampa
+        Substance: Acid
+        Color: Blue
         Planet: Tatooine
-        Power/Ability: The Force
-        Alien Species: Wookiee
+        Food: Bantha Milk
         Mission/Quest: Rescue the princess
         Adjective: Galactic
+        Verb: launch
+        Noun: The Force
 
     Star Trek
         Starfleet Captain Name: Captain Zorak

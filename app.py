@@ -34,6 +34,9 @@ def homepage():
     return render_template('home.html')
 
 
+# Surprise Me Routing
+
+
 @app.route('/form')
 def form():
     """Collect input from the submitted form."""
@@ -74,6 +77,22 @@ def stories():
     text = random_value.generate(prompts)
 
     return render_template('stories.html', prompts=prompts, text=text)
+
+
+# Star Wars Routing
+
+
+@app.route('/star-wars')
+def star_wars():
+    """
+    Collect user input for the star wars themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the Star Wars HTML input form page.
+
+    """
+    return render_template('star-wars.html')
 
 
 if __name__ == "__main__":
