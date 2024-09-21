@@ -102,17 +102,7 @@ STORY THEMES:
         Action Verb: Plunder
         Adjective: Salty
 
-    Space Adventures
-        Character (Person/Creature): Astronaut
-        Alien Companion: Martian
-        Villain: Space Pirate
-        Spacecraft Name: Starlight Voyager
-        Gadget/Tool: Laser Blaster
-        Planet: Neptune
-        Space Phenomenon: Black Hole
-        Mission/Quest: Explore a new galaxy
-        Action Verb: Orbit
-        Adjective: Cosmic
+
 
     Horror
         Main Character: The Survivor

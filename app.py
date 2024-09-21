@@ -11,6 +11,7 @@ from stories import STORIES
 from star_wars_stories import StarWarsStories
 from star_trek_stories import StarTrekStories
 from pirate_stories import PirateStories
+from medieval_stories import MedievalStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -262,6 +263,65 @@ def pirate_stories():
 
     return render_template('pirate-stories.html', prompts=prompts, text=text)
 
+
+# Medieval Adventure Routing
+
+
+@app.route('/medieval')
+def medieval():
+    """
+    Collect user input for the medieval themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the Medieval HTML input form page.
+
+    """
+    return render_template('medieval.html')
+
+
+@app.route('/medieval-stories')
+def medieval_stories():
+    """Show medieval story results."""
+    character = request.args['character']
+    noun = request.args['noun']
+    verb = request.args['verb']
+    adjective = request.args['adjective']
+    sidekick = request.args['sidekick']
+    weapon = request.args['weapon']
+    creature = request.args['creature']
+    magical_item = request.args['magical_item']
+    substance = request.args['substance']
+    color = request.args['color']
+    kingdom = request.args['kingdom']
+    food = request.args['food']
+    quest = request.args['quest']
+    villain = request.args['villain']
+    prompts = {
+        'character': character,
+        'noun': noun,
+        'verb': verb,
+        'adjective': adjective,
+        'sidekick': sidekick,
+        'weapon': weapon,
+        'creature': creature,
+        'magical_item': magical_item,
+        'substance': substance,
+        'color': color,
+        'kingdom': kingdom,
+        'food': food,
+        'quest': quest,
+        'villain': villain,
+    }
+
+    # Select a random story
+    random_key = random.choice(list(MedievalStories.keys()))
+    random_value = MedievalStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('medieval-stories.html', prompts=prompts, text=text)
 
 if __name__ == "__main__":
     app.run(debug=True)
