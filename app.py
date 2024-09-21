@@ -12,6 +12,7 @@ from star_wars_stories import StarWarsStories
 from star_trek_stories import StarTrekStories
 from pirate_stories import PirateStories
 from medieval_stories import MedievalStories
+from superhero_stories import SuperheroStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -323,5 +324,66 @@ def medieval_stories():
 
     return render_template('medieval-stories.html', prompts=prompts, text=text)
 
+
+# Superhero Adventure Routing
+
+
+@app.route('/superhero')
+def superhero():
+    """
+    Collect user input for the superhero themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the Superhero HTML input form page.
+
+    """
+    return render_template('superhero.html')
+
+
+@app.route('/superhero-stories')
+def superhero_stories():
+    """Show superhero story results."""
+    character = request.args['character']
+    noun = request.args['noun']
+    verb = request.args['verb']
+    adjective = request.args['adjective']
+    sidekick = request.args['sidekick']
+    weapon = request.args['weapon']
+    creature = request.args['creature']
+    superpower = request.args['superpower']
+    substance = request.args['substance']
+    color = request.args['color']
+    identity = request.args['identity']
+    food = request.args['food']
+    quest = request.args['quest']
+    villain = request.args['villain']
+    location = request.args['location']
+    prompts = {
+        'character': character,
+        'noun': noun,
+        'verb': verb,
+        'adjective': adjective,
+        'sidekick': sidekick,
+        'weapon': weapon,
+        'creature': creature,
+        'superpower': superpower,
+        'substance': substance,
+        'color': color,
+        'identity': identity,
+        'food': food,
+        'quest': quest,
+        'villain': villain,
+        'location': location,
+    }
+
+    # Select a random story
+    random_key = random.choice(list(SuperheroStories.keys()))
+    random_value = SuperheroStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('superhero-stories.html', prompts=prompts, text=text)
 if __name__ == "__main__":
     app.run(debug=True)
