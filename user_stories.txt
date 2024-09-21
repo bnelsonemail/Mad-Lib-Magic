@@ -72,16 +72,22 @@ STORY THEMES:
         Noun: The Force
 
     Star Trek
-        Starfleet Captain Name: Captain Zorak
-        Alien Species: Vulcan
-        Starship Name: USS Phoenix
-        Technology/Gadget: Tricorder
+        Starfleet Captain Name (captain): Captain Zorak
+        Alien Species (species): Vulcan
+        Starship Name (starship): USS Phoenix
+        Technology/Gadget (tech): Tricorder
         Planet: Kronos
         Villain: Romulan Commander
-        Mission/Quest: Negotiate Peace Treaty with the Romulans
-        Alien Creature: Gorn
-        Space Phenomenon: Wormhole
+        Mission/Quest (quest): Negotiate Peace Treaty with the Romulans
+        Alien Creature (creature): Gorn
+        Space Phenomenon (phenomenon): Wormhole
         Adjective: Warp-speed
+        Verb: fly
+        Noun: starship
+        Food: Dehydrated Apples
+        Substance: Acid
+        Color: Purple
+        
 
 
     Pirate Stories

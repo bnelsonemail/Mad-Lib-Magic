@@ -128,7 +128,7 @@ StarWarsStories = {
         encounter a fearsome {animal} and must use their {weapon} to defend
         themselves. At last, they arrive at the {adjective} villain’s lair, but
         not before sharing some {food}. Using the {color} stone hidden in the
-        {noun}, they embark on their {quest} to bring peace to the galaxy.
+        {noun}, they embark on their quest to {quest} to bring peace to the galaxy.
         """
     ),
 
@@ -173,7 +173,9 @@ StarWarsStories = {
         {planet}. Along the way, they must fend off wild {animal} and avoid
         pools of {substance}. The {color} sky is filled with tension as they
         stop briefly to eat {food}. Only by completing their {adjective} quest
-        can they {verb} and bring balance back to the galaxy.
+        can they {verb} and bring balance back to the galaxy. Only when they 
+        {quest} will the galaxy be safe from the evil influences of the dark 
+        side of the Force!
         """
     ),
 
@@ -200,7 +202,7 @@ StarWarsStories = {
         When {villian} steals the {noun}, the fate of the galaxy falls into
         the hands of {character} and their {adjective} companion {sidekick}.
         Piloting the {vehicle} and armed with the legendary {weapon}, they
-        embark on a {quest} to recover the {noun}. On {planet}, they face off
+        embark on a quest to {quest} to recover the {noun}. On {planet}, they face off
         against dangerous {animal} and wade through swamps of {substance}.
         After a quick bite of {food}, they must {verb} to stop {villian}'s
         evil plans under the {color} sky.
@@ -217,7 +219,7 @@ StarWarsStories = {
         {weapon}, they board the {vehicle} and head into the unknown. Along
         the way, they encounter a fearsome {animal}, cross rivers of
         {substance}, and feast on {food}. They must {verb} to complete their
-        {adjective} quest and retrieve the stolen {noun} before it’s too late.
+        {adjective} quest to {quest} and retrieve the stolen {noun} before it’s too late.
         """
     ),
 
@@ -231,7 +233,7 @@ StarWarsStories = {
         Armed with a {weapon}, they board their {vehicle} and {verb} across
         treacherous dunes filled with {animal}. The air is thick with {color}
         dust, and the only thing keeping them going is a feast of {food}. With
-        their {quest} nearly complete, they must navigate a river of
+        their quest to {quest} nearly complete, they must navigate a river of
         {substance} to stop {villian} and save the galaxy with their
         {adjective} bravery.
         """
@@ -245,7 +247,7 @@ StarWarsStories = {
         The evil {villian} has stolen a {color} {noun} from the sacred vaults
         of {planet}. Only {character}, accompanied by their {sidekick}, can
         retrieve it. Armed with the powerful {weapon}, they board the
-        {vehicle} and set off on a dangerous {quest}. Along the way, they face
+        {vehicle} and set off on a dangerous quest to {quest}. Along the way, they face
         {animal} and bubbling rivers of {substance}. After enjoying some
         {food}, they gather their strength and {verb} to confront {villian} in
         the final showdown. Will the {adjective} heroes save the day?
@@ -262,8 +264,8 @@ StarWarsStories = {
         {weapon} in hand, they fly across the sky in the {vehicle}. They
         encounter dangerous {animal} and strange pools of {substance}. Taking
         a break for some {food}, they prepare for the final stage of their
-        {quest}. They must {verb} quickly to save the sacred {noun} before the
-        {color} forces of darkness consume the planet.
+        quest to {quest}. They must {verb} quickly to save the sacred {noun} 
+        before the {color} forces of darkness consume the planet.
         """
     )
 }

@@ -1,73 +1,73 @@
 {% extends "base.html" %} 
-{% block title %}Create Your Own Star Wars Mad Libs Story | Interactive Game{% endblock title %}
-{% block meta_description %}Fill out this Star Wars-themed Mad Libs form to create your own fun and interactive Star Wars adventure! Perfect for fans of the galaxy far, far away!{% endblock meta_description %}
-{% block og_title %}Create Your Star Wars Adventure Mad Lib | Mad Lib Magic{% endblock og_title %}
-{% block og_description %}Create your own Star Wars adventure using this fun and interactive Mad Lib form. Enter your characters, weapons, and planets, and watch your story unfold!{% endblock og_description %}
-{% block twitter_title %}Create Your Own Star Wars Mad Libs Story | Mad Lib Magic{% endblock twitter_title %}
-{% block twitter_description %}Ready to embark on a Star Wars adventure? Fill in the blanks to create your own Mad Libs story in a galaxy far, far away!{% endblock twitter_description %}
+{% block title %}Create Your Own Star Trek Mad Libs Story | Interactive Game{% endblock title %}
+{% block meta_description %}Fill out this Star Trek-themed Mad Libs form to create your own fun and interactive Star Trek adventure! Perfect for fans to boldly go where no one has gone before!{% endblock meta_description %}
+{% block og_title %}Create Your Star Trek Adventure Mad Lib | Mad Lib Magic{% endblock og_title %}
+{% block og_description %}Create your own Star Trek adventure using this fun and interactive Mad Lib form. Enter your characters, weapons, and planets, and watch your story unfold!{% endblock og_description %}
+{% block twitter_title %}Create Your Own Star Trek Mad Libs Story | Mad Lib Magic{% endblock twitter_title %}
+{% block twitter_description %}Ready to embark on a Star Trek adventure? Fill in the blanks to create your own Mad Libs story and to boldly go where no one has gone before!{% endblock twitter_description %}
 {% block content %}
 <div class="bg-gray-400 p-6 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
-  <h1 class="text-3xl font-bold text-center mb-6">Create Your Own Star Wars Mad Lib Story</h1>
-  <p class="text-center mb-4 text-lg">Enter your details below and create a custom Star Wars adventure full of Jedi, Sith, and galactic action!</p>
+  <h1 class="text-3xl font-bold text-center mb-6">Create Your Own Star Trek Mad Lib Story</h1>
+  <p class="text-center mb-4 text-lg">Enter your details below and create a custom Star Trek adventure full of Q, Captain Picard, and beyond the Final Frontier!</p>
   <div class="form_cont">
-    <form action="/star-wars-stories" class="space-y-4">
+    <form action="/star-trek-stories" class="space-y-4">
       <div class="flex flex-col">
-        <label for="character" class="text-xl font-bold mb-2">Character:</label>
+        <label for="captain" class="text-xl font-bold mb-2">Starfleet Captain Name:</label>
         <input 
           type="text" 
-          placeholder="Jedi"
-          name="character"
-          id="character"
+          placeholder="Zorak"
+          name="captain"
+          id="captain"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div class="flex flex-col">
-        <label for="sidekick" class="text-xl font-bold mb-2">Sidekick:</label>
+        <label for="species" class="text-xl font-bold mb-2">Alien Species:</label>
         <input 
           type="text" 
-          placeholder="droid"
-          name="sidekick"
-          id="sidekick"
+          placeholder="Vulcan"
+          name="species"
+          id="species"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div class="flex flex-col">
-        <label for="villian" class="text-xl font-bold mb-2">Villain:</label>
+        <label for="starship" class="text-xl font-bold mb-2">Starship Name:</label>
         <input 
           type="text" 
-          placeholder="Sith Lord"
-          name="villian"
-          id="villian"
+          placeholder="USS Phoenix"
+          name="starship"
+          id="starship"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div class="flex flex-col">
-        <label for="weapon" class="text-xl font-bold mb-2">Weapon:</label>
+        <label for="tech" class="text-xl font-bold mb-2">Technology / Gadget:</label>
         <input 
           type="text" 
-          placeholder="lightsaber"
-          name="weapon"
-          id="weapon"
+          placeholder="tricorder"
+          name="tech"
+          id="tech"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div class="flex flex-col">
-        <label for="vehicle" class="text-xl font-bold mb-2">Vehicle:</label>
+        <label for="planet" class="text-xl font-bold mb-2">Planet:</label>
         <input 
           type="text" 
-          placeholder="Millennium Falcon"
-          name="vehicle"
-          id="vehicle"
+          placeholder="Kronos"
+          name="planet"
+          id="planet"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div class="flex flex-col">
-        <label for="animal" class="text-xl font-bold mb-2">Animal:</label>
+        <label for="villain" class="text-xl font-bold mb-2">Villain:</label>
         <input 
           type="text" 
-          placeholder="wampa"
-          name="animal" 
-          id="animal" 
+          placeholder="Romulan"
+          name="villain" 
+          id="villain" 
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
@@ -92,16 +92,6 @@
         />
       </div>
       <div class="flex flex-col">
-        <label for="planet" class="text-xl font-bold mb-2">Planet:</label>
-        <input 
-          type="text" 
-          placeholder="Tatooine"
-          name="planet"
-          id="planet"
-          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div class="flex flex-col">
         <label for="food" class="text-xl font-bold mb-2">Food Item:</label>
         <input 
           type="text" 
@@ -115,7 +105,7 @@
         <label for="quest" class="text-xl font-bold mb-2">Mission / Quest:</label>
         <input 
           type="text" 
-          placeholder="rescue the princess"
+          placeholder="Negotiate Peace Treaty with the Romulans"
           name="quest"
           id="quest"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -125,7 +115,7 @@
         <label for="adjective" class="text-xl font-bold mb-2">Adjective:</label>
         <input 
           type="text" 
-          placeholder="galactic"
+          placeholder="warp-speed"
           name="adjective"
           id="adjective"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -145,9 +135,29 @@
         <label for="noun" class="text-xl font-bold mb-2">Noun:</label>
         <input 
           type="text" 
-          placeholder="star"
+          placeholder="starship"
           name="noun"
           id="noun"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="creature" class="text-xl font-bold mb-2">Alien Creature:</label>
+        <input 
+          type="text" 
+          placeholder="Gorn"
+          name="creature"
+          id="creature"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="phenomenon" class="text-xl font-bold mb-2">Space Phenomenon:</label>
+        <input 
+          type="text" 
+          placeholder="wormhole"
+          name="phenomenon"
+          id="phenomenon"
           class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
@@ -155,7 +165,7 @@
         type="submit" 
         class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out hover:bg-red-500 cursor-pointer"
       >
-        Submit Your Star Wars Story!
+        Submit Your Star Trek Story!
       </button>
     </form>
   </div>
