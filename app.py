@@ -10,6 +10,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 from stories import STORIES
 from star_wars_stories import StarWarsStories
 from star_trek_stories import StarTrekStories
+from pirate_stories import PirateStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -201,6 +202,65 @@ def star_trek_stories():
     text = random_value.generate(prompts)
 
     return render_template('star-trek-stories.html', prompts=prompts, text=text)
+
+
+# Pirate Story Routing
+
+@app.route('/pirate')
+def pirate():
+    """
+    Collect user input for the pirate themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the Pirate HTML input form page.
+
+    """
+    return render_template('pirate.html')
+
+
+@app.route('/pirate-stories')
+def pirate_stories():
+    """Show pirate story results."""
+    character = request.args['character']
+    noun = request.args['noun']
+    verb = request.args['verb']
+    adjective = request.args['adjective']
+    sidekick = request.args['sidekick']
+    weapon = request.args['weapon']
+    creature = request.args['creature']
+    ship = request.args['ship']
+    substance = request.args['substance']
+    color = request.args['color']
+    location = request.args['location']
+    food = request.args['food']
+    treasure = request.args['treasure']
+    villain = request.args['villain']
+    prompts = {
+        'character': character,
+        'noun': noun,
+        'verb': verb,
+        'adjective': adjective,
+        'sidekick': sidekick,
+        'weapon': weapon,
+        'creature': creature,
+        'ship': ship,
+        'substance': substance,
+        'color': color,
+        'location': location,
+        'food': food,
+        'treasure': treasure,
+        'villain': villain,
+    }
+
+    # Select a random story
+    random_key = random.choice(list(PirateStories.keys()))
+    random_value = PirateStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('pirate-stories.html', prompts=prompts, text=text)
 
 
 if __name__ == "__main__":

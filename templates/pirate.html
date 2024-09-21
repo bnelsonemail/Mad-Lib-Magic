@@ -1,0 +1,163 @@
+{% extends "base.html" %} 
+{% block title %}Create Your Own Pirate Mad Libs Story | Interactive Game{% endblock title %}
+{% block meta_description %}Fill out this Pirate-themed Mad Libs form to create your own fun and interactive Pirate adventure! Perfect for fans who want to sail the seas, claim the treasures, and live by no rules!{% endblock meta_description %}
+{% block og_title %}Create Your Pirate Adventure Mad Lib | Mad Lib Magic{% endblock og_title %}
+{% block og_description %}Create your own Pirate adventure using this fun and interactive Mad Lib form. Enter your characters, weapons, and ship name, and watch your story unfold!{% endblock og_description %}
+{% block twitter_title %}Create Your Own Pirate Mad Libs Story | Mad Lib Magic{% endblock twitter_title %}
+{% block twitter_description %}Ready to embark on a Pirate adventure? Fill in the blanks to create your own Mad Libs story and sail the seas, claim the treasures, and live by no rules!{% endblock twitter_description %}
+{% block content %}
+<div class="bg-gray-400 p-6 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
+  <h1 class="text-3xl font-bold text-center mb-6">Create Your Own Pirate Mad Lib Story</h1>
+  <p class="text-center mb-4 text-lg">Enter your details below and create a custom Pirate adventure full of treasures of gold, the ghosts of Skull Island, and pillaging the seas in the Black Pearl!</p>
+  <div class="form_cont">
+    <form action="/pirate-stories" class="space-y-4">
+      <div class="flex flex-col">
+        <label for="character" class="text-xl font-bold mb-2">Character's Name:</label>
+        <input 
+          type="text" 
+          placeholder="Captain Jack Sparrow"
+          name="character"
+          id="character"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="sidekick" class="text-xl font-bold mb-2">Sidekick:</label>
+        <input 
+          type="text" 
+          placeholder="parrot"
+          name="sidekick"
+          id="sidekick"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="villain" class="text-xl font-bold mb-2">Villain:</label>
+        <input 
+          type="text" 
+          placeholder="One Eyed Willie"
+          name="villain"
+          id="villain"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="weapon" class="text-xl font-bold mb-2">Weapon:</label>
+        <input 
+          type="text" 
+          placeholder="cannon"
+          name="weapon"
+          id="weapon"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="ship" class="text-xl font-bold mb-2">Ship Name:</label>
+        <input 
+          type="text" 
+          placeholder="Black Pearl"
+          name="ship"
+          id="ship"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="location" class="text-xl font-bold mb-2">Location:</label>
+        <input 
+          type="text" 
+          placeholder="Skull Island"
+          name="location" 
+          id="location" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="substance" class="text-xl font-bold mb-2">Substance:</label>
+        <input 
+          type="text" 
+          placeholder="rum"
+          name="substance" 
+          id="substance" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="color" class="text-xl font-bold mb-2">Color:</label>
+        <input 
+          type="text" 
+          placeholder="purple" 
+          name="color" 
+          id="color" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="food" class="text-xl font-bold mb-2">Food Item:</label>
+        <input 
+          type="text" 
+          placeholder="salted pork"
+          name="food"
+          id="food"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="treasure" class="text-xl font-bold mb-2">Treasure:</label>
+        <input 
+          type="text" 
+          placeholder="Aztec Gold"
+          name="treasure"
+          id="treasure"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="adjective" class="text-xl font-bold mb-2">Adjective:</label>
+        <input 
+          type="text" 
+          placeholder="Treacherous"
+          name="adjective"
+          id="adjective"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="verb" class="text-xl font-bold mb-2">Verb:</label>
+        <input 
+          type="text" 
+          placeholder="plunder"
+          name="verb"
+          id="verb"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="noun" class="text-xl font-bold mb-2">Noun:</label>
+        <input 
+          type="text" 
+          placeholder="crow's nest"
+          name="noun"
+          id="noun"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="creature" class="text-xl font-bold mb-2">Sea Creature:</label>
+        <input 
+          type="text" 
+          placeholder="Kraken"
+          name="creature"
+          id="creature"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <button
+        type="submit" 
+        class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out hover:bg-red-500 cursor-pointer"
+      >
+        Submit Your Pirate Story!
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock content %}
