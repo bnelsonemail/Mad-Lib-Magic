@@ -13,6 +13,7 @@ from star_trek_stories import StarTrekStories
 from pirate_stories import PirateStories
 from medieval_stories import MedievalStories
 from superhero_stories import SuperheroStories
+from shadow_hunter_stories import ShadowHunterStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -385,5 +386,59 @@ def superhero_stories():
     text = random_value.generate(prompts)
 
     return render_template('superhero-stories.html', prompts=prompts, text=text)
+
+
+@app.route('/shadow-hunter')
+def shadowhunter():
+    """
+    Collect user input for the shadow hunter themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the shadow hunter HTML input form page.
+
+    """
+    return render_template('shadow-hunter.html')
+
+
+@app.route('/shadow-hunter-stories')
+def shadow_hunter_stories():
+    """Show shadow hunter story results."""
+
+    # Define default values for placeholders
+    default_values = {
+        'character': "Kaelith Blackthorn",
+        'noun': "lance",
+        'verb': "joust",
+        'adjective': "noble",
+        'sidekick': "Selene Nightshade",
+        'weapon': "Magic Eclipseblade",
+        'creature': "Troll",
+        'ability': "riftwalk",
+        'substance': "mana",
+        'color': "purple",
+        'artifact': "The Bloodshard Amulet",
+        'food': "venison",
+        'quest': "The Hunt for the Shattered Sigil",
+        'villain': "Lucian Voidstrike",
+        'realm': "The Veil of Duskmire",
+    }
+
+    # Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+
+    # Select a random story
+    random_key = random.choice(list(ShadowHunterStories.keys()))
+    random_value = ShadowHunterStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('shadow-hunter-stories.html', prompts=prompts, text=text)
+
 if __name__ == "__main__":
     app.run(debug=True)

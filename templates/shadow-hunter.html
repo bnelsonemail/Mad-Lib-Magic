@@ -1,0 +1,173 @@
+{% extends "base.html" %} 
+{% block title %}Create Your Own Medieval Fantasy Mad Libs Story | Interactive Game{% endblock title %}
+{% block meta_description %}Fill out this Shadow Hunter Fantasy-themed Mad Libs form to create your own fun and interactive Shadow Hunter adventure! Perfect for fans who want to battle demons, rescue mundanes, and more!{% endblock meta_description %}
+{% block og_title %}Create Your Shadow Hunter Adventure Mad Lib | Mad Lib Magic{% endblock og_title %}
+{% block og_description %}Create your own Shadow Hunter adventure using this fun and interactive Mad Lib form. Enter your characters, weapons, and more and watch your story unfold!{% endblock og_description %}
+{% block twitter_title %}Create Your Own Shadow Hunter Mad Libs Story | Mad Lib Magic{% endblock twitter_title %}
+{% block twitter_description %}Ready to embark on a Shadow Hunter adventure? Fill in the blanks to create your own Mad Libs story to battle demons, rescue mundanes, and more!{% endblock twitter_description %}
+{% block content %}
+<div class="bg-gray-400 p-6 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
+  <h1 class="text-3xl font-bold text-center mb-6">Create Your Own Shadow Hunter Mad Lib Story</h1>
+  <p class="text-center mb-4 text-lg">Enter your details below and create a custom Shadow Hunter adventure full of warlocks, fierce battles with ancient demons and dragons!</p>
+  <div class="form_cont">
+    <form action="/shadow-hunter-stories" class="space-y-4">
+      <div class="flex flex-col">
+        <label for="character" class="text-xl font-bold mb-2">Character's Name:</label>
+        <input 
+          type="text" 
+          placeholder="Kaelith Blackthorn"
+          name="character"
+          id="character"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="sidekick" class="text-xl font-bold mb-2">Sidekick:</label>
+        <input 
+          type="text" 
+          placeholder="Selene Nightshade"
+          name="sidekick"
+          id="sidekick"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="villain" class="text-xl font-bold mb-2">Villain:</label>
+        <input 
+          type="text" 
+          placeholder="Lucian Voidstrike"
+          name="villain"
+          id="villain"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="weapon" class="text-xl font-bold mb-2">Weapon:</label>
+        <input 
+          type="text" 
+          placeholder="Magic Eclipseblade"
+          name="weapon"
+          id="weapon"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="ability" class="text-xl font-bold mb-2">Special Ability:</label>
+        <input 
+          type="text" 
+          placeholder="riftwalk"
+          name="ability"
+          id="ability"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="realm" class="text-xl font-bold mb-2">Hidden Realm Name:</label>
+        <input 
+          type="text" 
+          placeholder="The Veil of Duskmire"
+          name="realm" 
+          id="realm" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="substance" class="text-xl font-bold mb-2">Substance:</label>
+        <input 
+          type="text" 
+          placeholder="mana"
+          name="substance" 
+          id="substance" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="artifact" class="text-xl font-bold mb-2">Mysterious Artifact:</label>
+        <input 
+          type="text" 
+          placeholder="The Bloodshard Amulet"
+          name="artifact" 
+          id="artifact" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="color" class="text-xl font-bold mb-2">Color:</label>
+        <input 
+          type="text" 
+          placeholder="purple" 
+          name="color" 
+          id="color" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="food" class="text-xl font-bold mb-2">Food Item:</label>
+        <input 
+          type="text" 
+          placeholder="venison"
+          name="food"
+          id="food"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="quest" class="text-xl font-bold mb-2">Quest:</label>
+        <input 
+          type="text" 
+          placeholder="The Hunt for the Shattered Sigil"
+          name="quest"
+          id="quest"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="adjective" class="text-xl font-bold mb-2">Adjective:</label>
+        <input 
+          type="text" 
+          placeholder="noble"
+          name="adjective"
+          id="adjective"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="verb" class="text-xl font-bold mb-2">Verb:</label>
+        <input 
+          type="text" 
+          placeholder="joust"
+          name="verb"
+          id="verb"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="noun" class="text-xl font-bold mb-2">Noun:</label>
+        <input 
+          type="text" 
+          placeholder="lance"
+          name="noun"
+          id="noun"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="creature" class="text-xl font-bold mb-2">Creature:</label>
+        <input 
+          type="text" 
+          placeholder="Troll"
+          name="creature"
+          id="creature"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <button
+        type="submit" 
+        class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out hover:bg-red-500 cursor-pointer"
+      >
+        Submit Your Shadow Hunter Story!
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock content %}
