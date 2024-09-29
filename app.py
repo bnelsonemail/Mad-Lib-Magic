@@ -440,5 +440,18 @@ def shadow_hunter_stories():
 
     return render_template('shadow-hunter-stories.html', prompts=prompts, text=text)
 
+
+@app.route('/smurfs')
+def smurf():
+    """
+    Collect user input for the smurf themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the smurf HTML input form page.
+
+    """
+    return render_template('smurf.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
