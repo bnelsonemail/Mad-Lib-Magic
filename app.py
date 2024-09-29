@@ -15,6 +15,7 @@ from medieval_stories import MedievalStories
 from superhero_stories import SuperheroStories
 from shadow_hunter_stories import ShadowHunterStories
 from detective_stories import DetectiveStories
+from medical_thriller_stories import MedicalThrillerStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -494,6 +495,60 @@ def detective_stories():
     text = random_value.generate(prompts)
 
     return render_template('detective-stories.html', prompts=prompts, text=text)
+
+
+@app.route('/medical-thriller')
+def medical_thriller():
+    """
+    Collect user input for the medical thriller themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the medical thriller HTML input form page.
+
+    """
+    return render_template('medical-thriller.html')
+
+
+@app.route('/medical-thriller-stories')
+def medical_thriller_stories():
+    """Show medical thriller story results."""
+
+    # Define default values for placeholders
+    default_values = {
+        'character': "Dr. Evelyn Hartman",
+        'noun': "building",
+        'verb': "plunge",
+        'adjective': "life-threatening",
+        'patient': "John Doe",
+        'illness': "COVID",
+        'creature': "dog",
+        'procedure': "emergency surgery",
+        'substance': "acid",
+        'color': "purple",
+        'hospital': "Saint Mercy General",
+        'food': "diet coke",
+        'lab': "experimental drug formula",
+        'villain': "Rogue Scientist",
+        'equipment': "scalpel",
+        'crime': "harvested organs",
+    }
+
+    # Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+
+    # Select a random story
+    random_key = random.choice(list(MedicalThrillerStories.keys()))
+    random_value = MedicalThrillerStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('medical-thriller-stories.html', prompts=prompts, text=text)
 
 
 
