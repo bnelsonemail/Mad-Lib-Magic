@@ -128,18 +128,56 @@ STORY THEMES:
         Action Verb: Wish
         Adjective: Magical
 
-    Smurfs
-        Smurfs Theme:
-        Smurf Name: Brainy Smurf
-        Villain: Gargamel
-        Magical Object: Smurfberry
-        Smurf House: Mushroom House
-        Forest/Location: The Enchanted Forest
-        Magical Creature: Azrael the Cat
-        Action Verb: Smurfing (as a verb)
-        Quest/Mission: Rescue a Smurf from Gargamel
-        Event: Smurf Village Celebration
-        Adjective: Smurfy
+    Biblical
+        Biblical Theme:
+        
+            Creating a Bible-themed Mad Libs game is a fun and creative way to engage with biblical stories and parables. Here are some suggestions for key word categories and examples of words or phrases you can use to replace them in your Mad Libs:
+
+            Key Word Categories and Examples:
+            Person (Male)
+                Examples: Jesus, Moses, David, Noah, Peter, John, Abraham, Joseph
+            Person (Female)
+                Examples: Mary, Ruth, Esther, Sarah, Martha, Deborah, Eve
+            Place
+                Examples: Bethlehem, Jerusalem, Egypt, Canaan, Nazareth, Garden of Eden, Sea of Galilee, Mount Sinai
+            Object (Religious/Biblical)
+                Examples: Ark, Manna, Cross, Stone Tablets, Lamp, Olive Branch, Staff, Crown of Thorns
+            Action (Past Tense Verb)
+                Examples: Walked, Preached, Healed, Prayed, Fled, Built, Baptized, Blessed
+            Number
+                Examples: Forty, Seven, Twelve, Three, One Hundred, Five Thousand
+            Emotion
+                Examples: Joyful, Fearful, Faithful, Angry, Hopeful, Thankful, Peaceful
+            Title (Biblical)
+                Examples: King, Prophet, Disciple, Apostle, Shepherd, Pharisee, Servant, Priest
+            Animal (Biblical)
+                Examples: Donkey, Lamb, Dove, Lion, Snake, Raven, Camel, Fish
+            Adjective
+                Examples: Holy, Righteous, Humble, Great, Mighty, Wise, Pure, Blessed
+            Miraculous Event
+                Examples: Parting of the Red Sea, Resurrection, Feeding the Five Thousand, Healing the Blind, Walking on Water, Burning Bush, Plagues of Egypt
+            Occupation
+                Examples: Fisherman, Shepherd, Carpenter, Farmer, Tax Collector, Soldier, King, Priest
+            Parable/Event
+                Examples: Prodigal Son, Good Samaritan, Loaves and Fishes, Last Supper, Sermon on the Mount, Tower of Babel
+            Food (Biblical)
+                Examples: Bread, Fish, Wine, Manna, Olive, Honey, Fig, Lamb
+            Body Part
+                Examples: Hand, Foot, Head, Eyes, Heart, Tongue, Ear, Knee
+            Verb (Present Tense)
+                Examples: Pray, Teach, Build, Heal, Lead, Serve, Preach, Bless
+            Time Period
+                Examples: Forty Days, Three Days, Seven Years, Twelve Years, Morning, Evening, Day of Rest
+            Weather
+                Examples: Storm, Wind, Rain, Flood, Drought, Lightning, Hail, Earthquake
+            Object (Everyday)
+                Examples: Boat, Tent, Rope, Cup, Table, Bread, Sandal, Pot
+            Type of Speech (Biblical)
+                Examples: Commandment, Prayer, Prophecy, Blessing, Sermon, Parable, Proverb
+
+
+
+
 
     Mystery / Detective
         Detective Name: Detective Holmes
@@ -176,6 +214,9 @@ STORY THEMES:
         Lab Discovery: Experimental Drug Formula
         Location: Underground Lab
         Adjective: Life-threatening
+
+
+
 
 *********************************************************************************************
 

@@ -14,6 +14,7 @@ from pirate_stories import PirateStories
 from medieval_stories import MedievalStories
 from superhero_stories import SuperheroStories
 from shadow_hunter_stories import ShadowHunterStories
+from detective_stories import DetectiveStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -441,17 +442,60 @@ def shadow_hunter_stories():
     return render_template('shadow-hunter-stories.html', prompts=prompts, text=text)
 
 
-@app.route('/smurfs')
-def smurf():
+@app.route('/detective')
+def detective():
     """
-    Collect user input for the smurf themed Mad Lib Story.
+    Collect user input for the detective themed Mad Lib Story.
 
     Returns
     -------
-    Renders the smurf HTML input form page.
+    Renders the detective HTML input form page.
 
     """
-    return render_template('smurf.html')
+    return render_template('detective.html')
+
+
+@app.route('/detective-stories')
+def detective_stories():
+    """Show detective story results."""
+
+    # Define default values for placeholders
+    default_values = {
+        'character': "Sherlock Holmes",
+        'noun': "building",
+        'verb': "plunge",
+        'adjective': "honorable",
+        'sidekick': "Watson",
+        'weapon': "lead pipe",
+        'creature': "dog",
+        'clue': "a bloody glove",
+        'substance': "acid",
+        'color': "purple",
+        'motive': "a secret affair",
+        'food': "diet coke",
+        'alibi': "working late at the office",
+        'suspect': "Miss Scarlett",
+        'location': "the library",
+        'crime': "secretary found dead",
+    }
+
+    # Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+
+    # Select a random story
+    random_key = random.choice(list(DetectiveStories.keys()))
+    random_value = DetectiveStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('detective-stories.html', prompts=prompts, text=text)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

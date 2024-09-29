@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Create and Generate Fun Detective Themed Mad Lib Stories Online{% endblock title %}
+
+{% block meta %}
+<meta name="description" content="Create fun Detective-themed Mad Lib stories with our easy-to-use generator. Customize your own stories and explore the Detective Adventures in a creative way!">
+<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "name": "Detective Mad Libs",
+   "description": "Create and generate fun Detective-themed Mad Lib stories online.",
+   "url": "https://mad-lib-magic-bnelson.replit.app/detective-stories"
+}
+</script>
+{% endblock meta %}
+
+{% block content %}
+<div class="container mx-auto mt-8 p-6 bg-gray-100 rounded-lg shadow-lg max-w-2xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-6">Generate Custom Detective-Themed Mad Lib Stories</h1>
+    <p class="text-lg text-gray-700">Explore the wonders of the Detective Adventures by creating your own personalized stories. Our Mad Libs generator lets you craft unique adventures with your favorite Detective characters, suspects, crimes, and more. Enter your words and let the journey begin!</p>
+</div>
+<div class="mt-6 p-6 bg-white rounded-lg shadow-lg max-w-2xl mx-auto pb-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Your Customized Detective Adventure</h2>
+    <p class="text-lg text-gray-700 pb-4">{{ text }}</p>
+    <p>Check out more fun <a href="/" class="text-blue-500">Mad Libs games</a> or explore other <a href="/shadow-hunter" class="text-blue-500">Detective content</a> on our site.</p>
+</div>
+{% endblock content %}
