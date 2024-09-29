@@ -16,6 +16,7 @@ from superhero_stories import SuperheroStories
 from shadow_hunter_stories import ShadowHunterStories
 from detective_stories import DetectiveStories
 from medical_thriller_stories import MedicalThrillerStories
+from biblical_stories import BiblicalStories
 # DevelopmentConfig, ProductionConfig, TestingConfig
 from config import DevelopmentConfig
 import random
@@ -549,6 +550,61 @@ def medical_thriller_stories():
     text = random_value.generate(prompts)
 
     return render_template('medical-thriller-stories.html', prompts=prompts, text=text)
+
+
+@app.route('/biblical')
+def biblical():
+    """
+    Collect user input for the biblical themed Mad Lib Story.
+
+    Returns
+    -------
+    Renders the biblical HTML input form page.
+
+    """
+    return render_template('biblical.html')
+
+
+@app.route('/biblical-stories')
+def biblical_stories():
+    """Show biblical story results."""
+
+    # Define default values for placeholders
+    default_values = {
+        'character-male': "John the Baptist",
+        'character-female': "Virgin Mary",
+        'noun': "boat",
+        'verb': "pray",
+        'adjective': "holy",
+        'weapon': "battle axe",
+        'miracle': "heal the blind",
+        'creature': "donkey",
+        'emotion': "peaceful",
+        'object': "Noah's Ark",
+        'color': "purple",
+        'location': "Bethlehem",
+        'food': "venison",
+        'quest': "spread the good news",
+        'villain': "Pontius Pilate",
+        'weather': "thunderstorms",
+        'commandment': "thou shall not steal",
+    }
+
+    # Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+
+    # Select a random story
+    random_key = random.choice(list(BiblicalStories.keys()))
+    random_value = BiblicalStories[random_key]
+
+    # Generate the story using the prompts dictionary
+    text = random_value.generate(prompts)
+
+    return render_template('biblical-stories.html', prompts=prompts, text=text)
 
 
 

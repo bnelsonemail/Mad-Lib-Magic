@@ -1,0 +1,193 @@
+{% extends "base.html" %} 
+{% block title %}Create Your Own Biblical Fantasy Mad Libs Story | Interactive Game{% endblock title %}
+{% block meta_description %}Fill out this Biblical Themed Mad Libs form to create your own fun and interactive Biblical adventure! Perfect for fans who want to revisit the biblical past in the times of Jesus and his disciples!{% endblock meta_description %}
+{% block og_title %}Create Your Biblical Adventure Mad Lib | Mad Lib Magic{% endblock og_title %}
+{% block og_description %}Create your own Biblical adventure using this fun and interactive Mad Lib form. Enter your characters, miracles, and more and watch your story unfold!{% endblock og_description %}
+{% block twitter_title %}Create Your Own Biblical Mad Libs Story | Mad Lib Magic{% endblock twitter_title %}
+{% block twitter_description %}Ready to embark on a Biblical adventure? Fill in the blanks to create your own Mad Libs story to see Jesus perform countless miracles, teach about his father, God, and more!{% endblock twitter_description %}
+{% block content %}
+<div class="bg-gray-400 p-6 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
+  <h1 class="text-3xl font-bold text-center mb-6">Create Your Own Biblical Mad Lib Story</h1>
+  <p class="text-center mb-4 text-lg">Enter your details below and create a custom Biblical adventure full of Jesus, his disciples, betrayal, and more!</p>
+  <div class="form_cont">
+    <form action="/shadow-hunter-stories" class="space-y-4">
+      <div class="flex flex-col">
+        <label for="character-male" class="text-xl font-bold mb-2">Character's Name (male, not Jesus):</label>
+        <input 
+          type="text" 
+          placeholder="John the Baptist"
+          name="character-male"
+          id="character-male"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="character-female" class="text-xl font-bold mb-2">Character's Name (female):</label>
+        <input 
+          type="text" 
+          placeholder="Virgin Mary"
+          name="character-female"
+          id="character-female"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="villain" class="text-xl font-bold mb-2">Villain:</label>
+        <input 
+          type="text" 
+          placeholder="Pontius Pilate"
+          name="villain"
+          id="villain"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="weapon" class="text-xl font-bold mb-2">Weapon:</label>
+        <input 
+          type="text" 
+          placeholder="battle axe"
+          name="weapon"
+          id="weapon"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="miracle" class="text-xl font-bold mb-2">Miracle Performed:</label>
+        <input 
+          type="text" 
+          placeholder="heal the blind"
+          name="miracle"
+          id="miracle"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="location" class="text-xl font-bold mb-2">Location:</label>
+        <input 
+          type="text" 
+          placeholder="Bethlehem"
+          name="location" 
+          id="location" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="emotion" class="text-xl font-bold mb-2">Emotion:</label>
+        <input 
+          type="text" 
+          placeholder="peaceful"
+          name="emotion" 
+          id="emotion" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="object" class="text-xl font-bold mb-2">Object:</label>
+        <input 
+          type="text" 
+          placeholder="Noah's Ark"
+          name="object" 
+          id="object" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="color" class="text-xl font-bold mb-2">Color:</label>
+        <input 
+          type="text" 
+          placeholder="purple" 
+          name="color" 
+          id="color" 
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="food" class="text-xl font-bold mb-2">Food Item:</label>
+        <input 
+          type="text" 
+          placeholder="venison"
+          name="food"
+          id="food"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="quest" class="text-xl font-bold mb-2">Quest:</label>
+        <input 
+          type="text" 
+          placeholder="spread the good news"
+          name="quest"
+          id="quest"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="adjective" class="text-xl font-bold mb-2">Adjective:</label>
+        <input 
+          type="text" 
+          placeholder="holy"
+          name="adjective"
+          id="adjective"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="verb" class="text-xl font-bold mb-2">Verb:</label>
+        <input 
+          type="text" 
+          placeholder="pray"
+          name="verb"
+          id="verb"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="noun" class="text-xl font-bold mb-2">Noun:</label>
+        <input 
+          type="text" 
+          placeholder="boat"
+          name="noun"
+          id="noun"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="creature" class="text-xl font-bold mb-2">Animal:</label>
+        <input 
+          type="text" 
+          placeholder="donkey"
+          name="creature"
+          id="creature"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="weather" class="text-xl font-bold mb-2">Weather:</label>
+        <input 
+          type="text" 
+          placeholder="thunderstorms"
+          name="weather"
+          id="weather"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="commandment" class="text-xl font-bold mb-2">Commandment:</label>
+        <input 
+          type="text" 
+          placeholder="thou shall not steal"
+          name="commandment"
+          id="commandment"
+          class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <button
+        type="submit" 
+        class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out hover:bg-red-500 cursor-pointer"
+      >
+        Submit Your Biblical Story!
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock content %}
