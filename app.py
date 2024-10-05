@@ -107,37 +107,32 @@ def star_wars():
 @app.route('/star-wars-stories')
 def star_wars_stories():
     """Show star wars story results."""
-    character = request.args['character']
-    noun = request.args['noun']
-    verb = request.args['verb']
-    adjective = request.args['adjective']
-    sidekick = request.args['sidekick']
-    weapon = request.args['weapon']
-    vehicle = request.args['vehicle']
-    animal = request.args['animal']
-    substance = request.args['substance']
-    color = request.args['color']
-    planet = request.args['planet']
-    food = request.args['food']
-    quest = request.args['quest']
-    villian = request.args['villian']
-    prompts = {
-        'character': character,
-        'noun': noun,
-        'verb': verb,
-        'adjective': adjective,
-        'sidekick': sidekick,
-        'weapon': weapon,
-        'vehicle': vehicle,
-        'animal': animal,
-        'substance': substance,
-        'color': color,
-        'planet': planet,
-        'food': food,
-        'quest': quest,
-        'villian': villian
+    # Define default values for placeholders
+    default_values = {
+        'character': "Jedi",
+        'noun': "star",
+        'verb': "launch",
+        'adjective': "galactic",
+        'sidekick': "droid",
+        'weapon': "lightsaber",
+        'vehicle': "Millennium Falcon",
+        'animal': "wampa",
+        'substance': "kyber crystals",
+        'color': "purple",
+        'planet': "Tatooine",
+        'food': "blue milk",
+        'quest': "rescue the princess",
+        'villian': "Sith Lord"
     }
 
+    # Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+        
     # Select a random story
     random_key = random.choice(list(StarWarsStories.keys()))
     random_value = StarWarsStories[random_key]
@@ -167,39 +162,33 @@ def star_trek():
 @app.route('/star-trek-stories')
 def star_trek_stories():
     """Show star trek story results."""
-    captain = request.args['captain']
-    noun = request.args['noun']
-    verb = request.args['verb']
-    adjective = request.args['adjective']
-    species = request.args['species']
-    starship = request.args['starship']
-    creature = request.args['creature']
-    tech = request.args['tech']
-    substance = request.args['substance']
-    color = request.args['color']
-    planet = request.args['planet']
-    food = request.args['food']
-    quest = request.args['quest']
-    villain = request.args['villain']
-    phenomenon = request.args['phenomenon']
-    prompts = {
-        'captain': captain,
-        'noun': noun,
-        'verb': verb,
-        'adjective': adjective,
-        'species': species,
-        'starship': starship,
-        'creature': creature,
-        'tech': tech,
-        'substance': substance,
-        'color': color,
-        'planet': planet,
-        'food': food,
-        'quest': quest,
-        'villain': villain,
-        'phenomenon':phenomenon
+    
+    default_values = {
+        'captain': "Zorak",
+        'noun': "starship",
+        'verb': "launch",
+        'adjective': "warp-speed",
+        'species': "Vulcan",
+        'starship': "USS Phoenix",
+        'creature': "Gorn",
+        'tech': "tricorder",
+        'substance': "acid",
+        'color': "purple",
+        'planet': "Kronos",
+        'food': "milk",
+        'quest': "Negotiate Peace Treaty with the Romulans",
+        'villain': 'Romulan',
+        'phenomenon':"wormhole"
     }
 
+# Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+        
     # Select a random story
     random_key = random.choice(list(StarTrekStories.keys()))
     random_value = StarTrekStories[random_key]
@@ -228,36 +217,30 @@ def pirate():
 @app.route('/pirate-stories')
 def pirate_stories():
     """Show pirate story results."""
-    character = request.args['character']
-    noun = request.args['noun']
-    verb = request.args['verb']
-    adjective = request.args['adjective']
-    sidekick = request.args['sidekick']
-    weapon = request.args['weapon']
-    creature = request.args['creature']
-    ship = request.args['ship']
-    substance = request.args['substance']
-    color = request.args['color']
-    location = request.args['location']
-    food = request.args['food']
-    treasure = request.args['treasure']
-    villain = request.args['villain']
-    prompts = {
-        'character': character,
-        'noun': noun,
-        'verb': verb,
-        'adjective': adjective,
-        'sidekick': sidekick,
-        'weapon': weapon,
-        'creature': creature,
-        'ship': ship,
-        'substance': substance,
-        'color': color,
-        'location': location,
-        'food': food,
-        'treasure': treasure,
-        'villain': villain,
+    default_values = {
+        'character': "Captain Jack Sparrow",
+        'noun': "crow's nest",
+        'verb': "plunder",
+        'adjective': "treacherous",
+        'sidekick': "parrot",
+        'weapon': "cannon",
+        'creature': "Kraken",
+        'ship': "Black Pearl",
+        'substance': "rum",
+        'color': "purple",
+        'location': "Skull Island",
+        'food': "salted pork",
+        'treasure': "Aztec Gold",
+        'villain': "One Eyed Willie",
     }
+
+# Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
 
     # Select a random story
     random_key = random.choice(list(PirateStories.keys()))
@@ -288,36 +271,30 @@ def medieval():
 @app.route('/medieval-stories')
 def medieval_stories():
     """Show medieval story results."""
-    character = request.args['character']
-    noun = request.args['noun']
-    verb = request.args['verb']
-    adjective = request.args['adjective']
-    sidekick = request.args['sidekick']
-    weapon = request.args['weapon']
-    creature = request.args['creature']
-    magical_item = request.args['magical_item']
-    substance = request.args['substance']
-    color = request.args['color']
-    kingdom = request.args['kingdom']
-    food = request.args['food']
-    quest = request.args['quest']
-    villain = request.args['villain']
-    prompts = {
-        'character': character,
-        'noun': noun,
-        'verb': verb,
-        'adjective': adjective,
-        'sidekick': sidekick,
-        'weapon': weapon,
-        'creature': creature,
-        'magical_item': magical_item,
-        'substance': substance,
-        'color': color,
-        'kingdom': kingdom,
-        'food': food,
-        'quest': quest,
-        'villain': villain,
+    default_values = {
+        'character': "Knight Sir Lancelot",
+        'noun': "lance",
+        'verb': "joust",
+        'adjective': "noble",
+        'sidekick': "squire",
+        'weapon': "Magic Sword",
+        'creature': "troll",
+        'magical_item': "enchanted amulet",
+        'substance': "mana",
+        'color': "purple",
+        'kingdom': "Avalon",
+        'food': "venison",
+        'quest': "Retrieve the Holy Grail",
+        'villain': "Evil Sorcerer",
     }
+
+# Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
 
     # Select a random story
     random_key = random.choice(list(MedievalStories.keys()))
@@ -348,38 +325,32 @@ def superhero():
 @app.route('/superhero-stories')
 def superhero_stories():
     """Show superhero story results."""
-    character = request.args['character']
-    noun = request.args['noun']
-    verb = request.args['verb']
-    adjective = request.args['adjective']
-    sidekick = request.args['sidekick']
-    weapon = request.args['weapon']
-    creature = request.args['creature']
-    superpower = request.args['superpower']
-    substance = request.args['substance']
-    color = request.args['color']
-    identity = request.args['identity']
-    food = request.args['food']
-    quest = request.args['quest']
-    villain = request.args['villain']
-    location = request.args['location']
-    prompts = {
-        'character': character,
-        'noun': noun,
-        'verb': verb,
-        'adjective': adjective,
-        'sidekick': sidekick,
-        'weapon': weapon,
-        'creature': creature,
-        'superpower': superpower,
-        'substance': substance,
-        'color': color,
-        'identity': identity,
-        'food': food,
-        'quest': quest,
-        'villain': villain,
-        'location': location,
+    default_values = {
+        'character': "Thunderbolt",
+        'noun': "candy",
+        'verb': "fly",
+        'adjective': "treacherous",
+        'sidekick': "Speedster",
+        'weapon': "energy gauntlet",
+        'creature': "Kraken",
+        'superpower': "invisibility",
+        'substance': "acid",
+        'color': "purple",
+        'identity': "Alex Storm",
+        'food': "diet coke",
+        'quest': "save the city from destruction",
+        'villain': "Shadow King",
+        'location': "Gothom",
     }
+
+# Get form data and replace empty strings with default values
+    prompts = {}
+    for key, default_value in default_values.items():
+        
+        # Fetch the input and check if it's empty or None, then use the default
+        input_value = request.args.get(key)
+        prompts[key] = input_value if input_value and input_value.strip() else default_value
+
 
     # Select a random story
     random_key = random.choice(list(SuperheroStories.keys()))
