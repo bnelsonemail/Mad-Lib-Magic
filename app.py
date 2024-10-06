@@ -22,6 +22,7 @@ from config import DevelopmentConfig
 import random
 from dotenv import load_dotenv, find_dotenv
 
+# Force rebuild
 
 # load environment variables from the .env file
 load_dotenv(find_dotenv())
